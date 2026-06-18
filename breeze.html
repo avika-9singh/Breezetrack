@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BreezeTrack</title>
+  <link rel="stylesheet" href="breeze.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>BreezeTrack</h1>
+      <div class="controls">
+        <div class="input">
+          <input id="cityInput" type="text" placeholder="Search city (e.g. Noida)" />
+          <button id="searchBtn">Search</button>
+        </div>
+        <button id="geoBtn">Use my location</button>
+      </div>
+    </header>
+
+    <div class="card">
+      <div id="status">Enter a city or use location</div>
+
+      <div class="main">
+        <div class="weather-left">
+          <div class="icon">
+            <img id="weatherIcon" />
+            <div>
+              <div class="city" id="cityName">—</div>
+              <div class="desc" id="desc">—</div>
+            </div>
+          </div>
+
+          <div id="temp">—°C</div>
+
+          <div class="metrics">
+            <div class="metric"><div id="humidity">—%</div><small>Humidity</small></div>
+            <div class="metric"><div id="wind">— m/s</div><small>Wind</small></div>
+            <div class="metric"><div id="pressure">— hPa</div><small>Pressure</small></div>
+          </div>
+        </div>
+
+        <aside class="right">
+          <strong>Details</strong>
+          <div class="faded">Coordinates: <span id="coords">—</span></div>
+          <div class="faded">Last update: <span id="updated">—</span></div>
+          <div id="extra"></div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <script src="breeze.js "></script>
+</body>
+</html>
